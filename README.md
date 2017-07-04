@@ -5,6 +5,10 @@
 ## Using Vue CLI
 Began project using CLI `vue init webpack compare-vue`
 
+## Style
+Styled using Bulma CSS framework
+[Bulma](http://bulma.io/)
+
 
 ## Build Setup
 
