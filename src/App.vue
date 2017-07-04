@@ -40,12 +40,33 @@
     </div>
 
 
+<!-- Components are inserted here -->
     <router-view></router-view>
+
+
+    <footer class="footer is-primary">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <p>
+              This is the footer section for the page including some links.
+            </p>
+          </div>
+          <div class="columns has-text-right">
+            <a class="icon" href="#"><i class="fa fa-facebook"></i></a>
+            <a class="icon" href="#"><i class="fa fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
   </div>
 </template>
 
 
-
+<!-- Script -->
 <script>
 export default {
   name: 'app',
@@ -63,7 +84,7 @@ export default {
 </script>
 
 
-
+<!-- Style -->
 <style lang="sass">
 /* Import Bulma Css Framework */
 @import "../node_modules/bulma/bulma.sass"
@@ -88,5 +109,15 @@ a.r-item
 
 .nav-toggle span
   background-color: #C1C1C1
+
+footer
+  background-color: $primary !important
+  color: #fff
+
+  .icon
+    color: #fff
+    margin-left: 20px
+
+
 
 </style>
