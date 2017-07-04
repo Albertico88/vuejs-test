@@ -1,0 +1,21 @@
+.DS_Store
+.editorconfig
+.jshintrc
+.babelrc
+node_modules/
+dist/
+static/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+src/assets
+
+
+
+# Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
