@@ -9,13 +9,14 @@
         </div>
 
       <!-- Hamburger Toggle -->
-        <span class="nav-toggle">
+      <!-- Using Vue directives v- -->
+        <span class="nav-toggle" v-on:click="toggleNav" v-bind:class="{ 'is-active': isActive }">
           <span></span>
           <span></span>
           <span></span>
         </span>
 
-        <div class="nav-right nav-menu">
+        <div class="nav-right nav-menu" v-bind:class="{ 'is-active': isActive }">
 
         <!-- Links using Vue's router link -->
           <router-link to="/" class="nav-item r-item">Home</router-link>
@@ -43,11 +44,25 @@
   </div>
 </template>
 
+
+
 <script>
 export default {
-  name: 'app'
+  name: 'app',
+  data: function() {
+    return {
+      isActive: false
+    }
+  },
+  methods: {
+    toggleNav: function() {
+      this.isActive = !this.isActive;
+    }
+  }
 }
 </script>
+
+
 
 <style lang="sass">
 /* Import Bulma Css Framework */
@@ -57,7 +72,7 @@ export default {
 .nav
   background-color: #383838
   a:hover
-    color: $primary
+    color: gray
 
 .nav-left a
   color: #fff
@@ -70,6 +85,8 @@ a.r-item
     color: gray
     &:hover
       background-color: #F1F1F1
-      
+
+.nav-toggle span
+  background-color: #C1C1C1
 
 </style>
