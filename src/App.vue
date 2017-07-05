@@ -1,30 +1,31 @@
+
 <template>
   <div id="app">
 
     <!-- Nav Section -->
-    <div class="nav has-shadow">
-      <div class="container">
-        <div class="nav-left">
-          <a class="nav-item">Logo</a>
+    <div class="navbar">
+      <div class="navbar-brand">
+        <a class="navbar-item logo">Logo</a>
+
+        <!-- Hamburger Toggle -->
+        <!-- Using Vue directives v- -->
+        <div class="navbar-burger burger" v-on:click="toggleNav" v-bind:class="{ 'is-active': isActive }">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+      </div>
 
-      <!-- Hamburger Toggle -->
-      <!-- Using Vue directives v- -->
-        <span class="nav-toggle" v-on:click="toggleNav" v-bind:class="{ 'is-active': isActive }">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-
-        <div class="nav-right nav-menu" v-bind:class="{ 'is-active': isActive }">
+      <div class="navbar-menu" v-bind:class="{ 'is-active': isActive }">
+        <div class="navbar-end">
 
         <!-- Links using Vue's router link -->
-          <router-link to="/" class="nav-item r-item">Home</router-link>
-          <router-link to="/faq" class="nav-item r-item">FAQ</router-link>
-          <router-link to="/" class="nav-item r-item">About</router-link>
-          <router-link to="/faq" class="nav-item r-item">Contact</router-link>
+          <router-link to="/" class="navbar-item r-item">Home</router-link>
+          <router-link to="/faq" class="navbar-item r-item">FAQ</router-link>
+          <router-link to="/" class="navbar-item r-item">About</router-link>
+          <router-link to="/faq" class="navbar-item r-item">Contact</router-link>
 
-          <div class="nav-item">
+          <div class="navbar-item">
             <p class="control">
               <a class="button is-primary is-outlined">
                 <span class="icon">
@@ -34,7 +35,6 @@
               </a>
             </p>
           </div>
-
         </div>
       </div>
     </div>
@@ -90,14 +90,14 @@ export default {
 @import "../node_modules/bulma/bulma.sass"
 @import "mediaQuery"
 
-.nav
+.navbar
   background-color: #383838
-  a:hover
-    color: #fff !important
 
-.nav-left a
-  color: #fff !important
+.navbar-item.logo
+  color: $primary !important
   font-weight: bold
+  font-size: 19px
+
 
 a.r-item
   color: #C1C1C1
@@ -107,9 +107,6 @@ a.r-item
     &:hover
       background-color: #F1F1F1
       color: #383838 !important
-
-.nav-toggle span
-  background-color: #C1C1C1
 
 footer
   background-color: $primary !important
