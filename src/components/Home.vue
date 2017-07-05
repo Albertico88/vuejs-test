@@ -1,6 +1,8 @@
+
 <template>
 
   <div class="home">
+
     <section class="hero">
       <div class="hero-body">
         <div class="container">
@@ -12,14 +14,45 @@
         </div>
       </div>
     </section>
-  </div>
 
+    <section class="section">
+      <div class="container">
+        <div class="columns pd is-desktop">
+          <div class="column is-1 has-text-centered">
+            <i class="fa fa-cog is-primary"></i>
+          </div>
+          <div class="column is-one-third-desktop">
+            <p class="title">
+              <strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</strong>
+            </p>
+          </div>
+          <div class="column">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="columns pd">
+      <div class="column">
+        <div class="card">
+          <div class="card-content">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 
 </template>
 
 
 
 <script>
+
 export default {
   name: 'home',
   data (){

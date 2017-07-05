@@ -90,14 +90,13 @@ export default {
 @import "../node_modules/bulma/bulma.sass"
 @import "mediaQuery"
 
-
 .nav
   background-color: #383838
   a:hover
-    color: gray
+    color: #fff !important
 
 .nav-left a
-  color: #fff
+  color: #fff !important
   font-weight: bold
 
 a.r-item
@@ -107,6 +106,7 @@ a.r-item
     color: gray
     &:hover
       background-color: #F1F1F1
+      color: #383838 !important
 
 .nav-toggle span
   background-color: #C1C1C1
@@ -114,7 +114,6 @@ a.r-item
 footer
   background-color: $primary !important
   color: #fff
-
 
   .icon
     color: #fff
