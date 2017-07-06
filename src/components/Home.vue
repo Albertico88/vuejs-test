@@ -33,18 +33,51 @@
           </div>
         </div>
       </div>
-    </section>
+
 
     <div class="columns pd">
+
       <div class="column">
         <div class="card">
           <div class="card-content">
-            
+            <p class="title">
+              “You only live once, but if you do it right, once is enough.”
+            </p>
+            <br>
+            <p class="subtitle">- Mae West
+            </p>
           </div>
         </div>
       </div>
-    </div>
 
+      <div class="column">
+        <div class="card">
+          <div class="card-content">
+            <p class="title">
+              “A room without books is like a body without a soul.”
+            </p>
+            <br>
+            <p class="subtitle"> -  Marcus Tullius Cicero
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <div class="card-content">
+            <p class="title">
+              “In three words I can sum up everything I've learned about life: it goes on.”
+            </p>
+            <br>
+            <p class="subtitle"> - Robert Frost
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
   </div>
 
 </template>
@@ -90,5 +123,15 @@ h2
   margin: 1.5rem 0 2rem 0 !important
   color: black
 
+.fa-cog
+  font-size: 40px
+
+#learn
+  +desktop
+    margin-bottom: 2rem
+
+.pd
+  +tablet
+    padding: 2em 0
 
 </style>
