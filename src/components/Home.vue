@@ -10,7 +10,7 @@
           <div class="is-two-thirds column is-paddingless">
             <h2 class="subtitle">{{ subheading }}</h2>
           </div>
-          <a class="button is-large is-primary" id="learn">Learn more</a>
+          <a class="button is-large is-primary" id="learn" href="#/faq">Learn more</a>
         </div>
       </div>
     </section>

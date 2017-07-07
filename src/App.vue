@@ -5,7 +5,7 @@
     <!-- Nav Section -->
     <div class="navbar">
       <div class="navbar-brand">
-        <a class="navbar-item logo">Logo</a>
+        <a class="navbar-item logo" href="#">Your Logo Here</a>
 
         <!-- Hamburger Toggle -->
         <!-- Using Vue directives v- -->
