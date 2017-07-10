@@ -22,8 +22,8 @@
         <!-- Links using Vue's router link -->
           <router-link to="/" class="navbar-item r-item">Home</router-link>
           <router-link to="/faq" class="navbar-item r-item">FAQ</router-link>
-          <router-link to="/" class="navbar-item r-item">About</router-link>
-          <router-link to="/faq" class="navbar-item r-item">Contact</router-link>
+          <router-link to="/about" class="navbar-item r-item">About</router-link>
+          <router-link to="/contact" class="navbar-item r-item">Contact</router-link>
 
           <div class="navbar-item">
             <p class="control">
@@ -90,6 +90,9 @@ export default {
 @import "../node_modules/bulma/bulma.sass"
 @import "mediaQuery"
 
+body
+  height: 100%
+
 .navbar
   background-color: #383838
 
@@ -111,6 +114,9 @@ a.r-item
 footer
   background-color: $primary !important
   color: #fff
+  bottom: 0
+  width: 100%
+  position: inherit
 
   .icon
     color: #fff
